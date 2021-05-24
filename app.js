@@ -50,8 +50,8 @@ class TaskManager {
       <div class="card text-dark bg-light mb-3" style="max-width: 18rem;">
       <div class="card-body">
             <p class="card-text">Maker: <br> ${taskObj.AssignedBy} </p>
-            <p class="card-text">Task: <br> ${taskObj.AssignedTo} </p>
-            <p class="card-text"> Assigined to: <br> ${taskObj.Des}</p>
+            <p class="card-text">Task: <br> ${taskObj.Des} </p>
+            <p class="card-text"> Assigined to: <br> ${taskObj.assignedTo}</p>
             <p class="card-text">Date: ${taskObj.DueD}</p>
             <p class="card-text">Status: ${taskObj.status} </p>
             <button class="delete btn btn-danger" card-id=${taskObj.ID}>Delete</button>
