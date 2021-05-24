@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+  <!-- Nav bar -->
+  <div class="sidenav">
+    <img id="NavLogo" src="2038384-200.png" alt="logo" width="100" >
+    <a href="index.html">Form</a>
+    <a href="about.html">Tasks</a>
+  </div>
+   <!-- this is the form -->
+    <div class="container" id ="FORM">
+        <div class="row">
+          <div class="col">
+            <form class="needs-validation" novalidate>
+                <div class="mb-3">
+                  <label for="validationCustom02" class="form-label">Assigner</label>
+                  <input type="text" class="form-control" id="Assigner" placeholder="Name of Assigner" value="" >
+                <div class="valid-feedback">
+                </div>
+                <div class="mb-3">
+                  <label for="exampleInputPassword1" class="form-label">Description </label>
+                  <input type="text" class="form-control" id="Description" placeholder="Description" value="" >
+                  <div class="valid-feedback"></div>
+                </div>
+                <div class="mb-3">
+                    <label for="exampleInputPassword1" class="form-label">Assigned To</label>
+                    <input type="text" class="form-control" id="Assigned-To" placeholder="Who is this for" value="" >
+                    <div class="valid-feedback"></div>
+                </div>
+                <div class="mb-3">
+                    <label for="DueDate">DueDate:</label>
+                    <input type="date" id="DueDate" name="DueDate"><br>
+                </div>
+                <div class="mb-3">
+                    <label for="exampleInputPassword1" class="form-label">Status </label>
+                    <select class="form-select" id="StatusSel" aria-label="Default select example">
+                        <option selected>Open this select Status</option>
+                        <option id="TODO" value="TODO">TODO</option>
+                        <option id="INPROGRESS" value="IN PROGRESS">IN PROGRESS</option>
+                        <option id="REVIEW" value="REVIEW">REVIEW</option>
+                        <option id="DONE" value="DONE">DONE</option>
+                      </select>
+                </div>
+                <button type="button" class="btn btn-primary" id="addbutton">Add task</button>
+              </form>
+              
+              <!-- this is the end of the form -->
+              <!-- Start of form list -->
+              <!-- <div class="container" id="mainSection"> -->
+          
+          <!-- <div class="col">
+          </div>
+          <div class="col-6">
+            <div class="list-group">
+              <a href="#" class="list-group-item list-group-item-action">
+                <div class="d-flex w-100 justify-content-between">
+                  <h5 class="mb-1">Tasks for </h5>
+                  <small>1 days ago</small>
+                </div>
+                <p class="mb-1"></p>
+                <small>REVIEW</small>
+              </a>
+              <a href="#" class="list-group-item list-group-item-action">
+                <div class="d-flex w-100 justify-content-between">
+                  <h5 class="mb-1">Tasks for</h5>
+                  <small class="text-muted">3 days ago</small>
+                </div>
+                <p class="mb-1"></p>
+                <small class="text-muted">TODO</small>
+              </a>
+              <a href="#" class="list-group-item list-group-item-action">
+                <div class="d-flex w-100 justify-content-between">
+                  <h5 class="mb-1">Tasks for</h5>
+                  <small class="text-muted">5 days ago</small>
+                </div>
+                <p class="mb-1"></p>
+                <small class="text-muted">IN PROGRESS</small>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div> -->
+    <!-- start of hard coded cards -->
+      <!-- <div class="container" id="CardsPos">
+        <div class="list-group">
+        <div class="row">
+          <div class="col">
+            <div class="card text-dark bg-light mb-3" style="max-width: 18rem;">
+                <div class="card-header">TASK 1</div>
+                <div class="card-body">
+                  <h5 class="card-title">TASK</h5>
+                  <p class="card-text">Task: <br> Clear browser history  </p>
+                  <p class="card-text"></p>
+                  <p class="card-text"> Assigined to: <br> Nojus Cebatoriunas</p>
+                  <p class="card-text">Date: 18/05/2021</p>
+                  <p class="card-text">Status: </p>
+                </div>
+              </div>
+          </div>
+          
+          <div class="col">
+            <div class="card text-dark bg-light mb-3" style="max-width: 18rem;">
+                <div class="card-header">TASK 3</div>
+                <div class="card-body">
+                  <h5 class="card-title">TASK</h5>
+                  <p class="card-text">Task: <br> Clear browser history  </p>
+                  <p class="card-text"></p>
+                  <p class="card-text"> Assigined to: <br> Nojus Cebatoriunas</p>
+                  <p class="card-text">Date: 18/05/2021</p>
+                  <p class="card-text">Status: </p>
+                </div>
+              </div>
+          </div>
+          <div class="col">
+            <div class="card text-dark bg-light mb-3" style="max-width: 18rem;">
+                <div class="card-header">TASK 4</div>
+                <div class="card-body">
+                  <h5 class="card-title">TASK</h5>
+                  <p class="card-text">Task: <br> Clear browser history  </p>
+                  <p class="card-text"></p>
+                  <p class="card-text"> Assigined to: <br> Nojus Cebatoriunas</p>
+                  <p class="card-text">Date: 18/05/2021</p>
+                  <p class="card-text">Status: </p>
+                </div>
+              </div>
+          </div>
+          <div class="col">
+            <div class="card text-dark bg-light mb-3" style="max-width: 18rem;">
+                <div class="card-header">TASK 5</div>
+                <div class="card-body">
+                  <h5 class="card-title">TASK</h5>
+                  <p class="card-text">Task: <br> Clear browser history  </p>
+                  <p class="card-text"></p>
+                  <p class="card-text"> Assigined to: <br> Nojus Cebatoriunas</p>
+                  <p class="card-text">Date: 18/05/2021</p>
+                  <p class="card-text">Status: </p>
+                </div>
+              </div>
+          </div>
+        </div>
+      </div> -->
+      
+      
+      <!-- end of hard coded cards -->
+      <!--where my list goes -->
+      <div class="col-md-6" >
+        <div class="list-group" id="tasksList">
+            <!-- this is where tasks will pop-->
+          </div>
+    </div>
+    
+
+      <!-- this row, where each card will have its own column (col-md-4)-->
+   <div class="row" id="cardsArea">
+   <!-- inner HTML for the row above, goes here-->
+
+    </div>
+    </div>
+
+      <script src="app.js"></script>
+      <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+      <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+</body>
+</html>
